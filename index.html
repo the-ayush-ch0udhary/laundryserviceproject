@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Laundry Booking</title>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- EmailJS library -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+
+<div class="logo">LaundryPro</div>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#about">About Us</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+<div class="user">Username</div>
+
+</nav>
+
+
+<!-- HERO SECTION -->
+<section id="home" class="hero">
+
+<div class="hero-left">
+
+<h1>Revitalize Your Clothes with Expert Laundry Services</h1>
+
+<p>
+Premium dry cleaning, washing and ironing.
+Book your laundry pickup today.
+</p>
+
+<button id="BookButton">Book a Service Today</button>
+
+</div>
+
+<div class="hero-right">
+
+<img src="https://cdn-icons-png.flaticon.com/512/2975/2975175.png">
+
+</div>
+
+</section>
+
+
+<!-- ACHIEVEMENTS -->
+<section class="stats">
+
+<h2>Our Achievements</h2>
+
+<div class="stat-box">
+
+<div>
+<h3>15+</h3>
+<p>Laundry Services</p>
+</div>
+
+<div>
+<h3>240+</h3>
+<p>Happy Customers</p>
+</div>
+
+<div>
+<h3>2+ Years</h3>
+<p>Experience</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- SERVICES + CART -->
+<section id="services" class="booking">
+
+<div class="service-list">
+
+<h2>Services</h2>
+
+<div class="service">
+<p>Dry Cleaning - ₹200</p>
+<button data-name="Dry Cleaning" data-price="200">Add Item</button>
+</div>
+
+<div class="service">
+<p>Wash & Fold - ₹100</p>
+<button data-name="Wash & Fold" data-price="100">Add Item</button>
+</div>
+
+<div class="service">
+<p>Ironing - ₹300</p>
+<button data-name="Ironing" data-price="300">Add Item</button>
+</div>
+
+<div class="service">
+<p>Stain Removal - ₹500</p>
+<button data-name="Stain Removal" data-price="500">Add Item</button>
+</div>
+
+<div class="service">
+<p>Leather Cleaning - ₹999</p>
+<button data-name="Leather Cleaning" data-price="999">Add Item</button>
+</div>
+
+<p class="info">Click add item to include service in cart</p>
+
+</div>
+
+
+<div class="cart">
+
+<h3>Added Items</h3>
+
+<table>
+
+<thead>
+<tr>
+<th>No</th>
+<th>Service</th>
+<th>Price</th>
+<th>Action</th>
+</tr>
+</thead>
+
+<tbody id="cartBody"></tbody>
+
+</table>
+
+<p>Total Amount ₹ <span id="totalAmount">0</span></p>
+
+
+<div class="form">
+
+<h3>Book Now</h3>
+
+<input id="name" type="text" placeholder="Full Name">
+
+<input id="email" type="email" placeholder="Email">
+
+<input id="phone" type="tel" placeholder="Phone No.">
+
+<button id="book">Book Now</button>
+
+<p id="status"></p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- QUALITY SECTION -->
+<section id="about" class="quality">
+
+<h2>Why Choose Us</h2>
+
+<div class="quality-box">
+
+<div class="card">
+<h3>Premium Service</h3>
+<p>High quality washing and dry cleaning.</p>
+</div>
+
+<div class="card">
+<h3>Quick Support</h3>
+<p>Customer support whenever needed.</p>
+</div>
+
+<div class="card">
+<h3>Timely Delivery</h3>
+<p>Pickup and delivery on time.</p>
+</div>
+
+<div class="card">
+<h3>Affordable Prices</h3>
+<p>Best value for money.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- NEWSLETTER -->
+<section class="newsletter">
+
+<h2>Subscribe to our newsletter</h2>
+
+<input id="sName" type="text" placeholder="Full Name">
+<input id="sEmail" type="text" placeholder="Email">
+
+<button id="sButton">Subscribe</button>
+
+<p id="message"></p>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer id="contact">
+
+<div class="footer">
+
+<div>
+<h3>LaundryPro</h3>
+<p>Professional laundry services.</p>
+</div>
+
+<div>
+<h4>Important Links</h4>
+<p>About Us</p>
+<p>Contact</p>
+<p>Privacy Policy</p>
+</div>
+
+<div>
+<h4>Contact</h4>
+<p>hello123@gmail.com</p>
+<p>+91 1234567890</p>
+</div>
+
+<div>
+<h4>Follow Us</h4>
+<p>Instagram | Facebook | Twitter</p>
+</div>
+
+</div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
